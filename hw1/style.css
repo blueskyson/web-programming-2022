@@ -1,0 +1,48 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+#navbar {
+    /* give it width in order to center it */
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    top: 2%;
+    position: absolute;
+    /* text and font */
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(141, 141, 141);
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.asset {
+    left: 50%;
+    top: 55%;
+    position: absolute;
+}
+
+#box {
+    width: 512px;
+    margin-left: -256px;
+    height: 598px;
+    margin-top: -299px;
+    background: url(./res/box.png);
+}
+
+#rotating_text {
+    width: 968px;
+    margin-left: -484px;
+    height: 724px;
+    margin-top: -362px;
+    background: url(./res/rotating_text.png);
+}
+
+#upload_icon {
+    width: 120px;
+    margin-left: -60px;
+    height: 206px;
+    margin-top: -103px;
+    background: url(./res/upload_icon.png);
+}
