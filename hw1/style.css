@@ -38,6 +38,7 @@ body {
     margin-top: -1049px;
     background: url(./res/rotating_ray.png);
     z-index: 1;
+    animation: Rotation 5s linear infinite
 }
 
 #box {
@@ -77,7 +78,7 @@ body {
 }
 
 
-/* let arrow go up and down */
+/* let arrow go up and down on hover */
 
 #upload_icon:hover {
     animation: MoveUpDown 0.6s linear infinite;
@@ -90,5 +91,17 @@ body {
     }
     50% {
         transform: translateY(-2vh);
+    }
+}
+
+
+/* let ray rotate forever */
+
+@keyframes Rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
