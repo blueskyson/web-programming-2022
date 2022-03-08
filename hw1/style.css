@@ -21,7 +21,8 @@ body {
 }
 
 .landing_page_02,
-.landing_page_03 {
+.landing_page_03 .left_panel,
+.landing_page_03 .right_panel {
     display: none;
 }
 
@@ -100,6 +101,92 @@ body {
     height: 598px;
     margin-top: -299px;
     background: url(./res/box2.png);
+}
+
+
+/* landing_page_03 */
+
+.landing_page_03 .left_panel div {
+    left: 50%;
+    top: 55%;
+    position: fixed;
+}
+
+.landing_page_03 .right_panel {
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 40%;
+    position: absolute;
+}
+
+#box3 {
+    z-index: 2;
+    width: 512px;
+    margin-left: -256px;
+    height: 598px;
+    margin-top: -299px;
+    background: url(./res/box2.png);
+}
+
+#tissue {
+    z-index: 3;
+    width: 256px;
+    margin-left: -128px;
+    height: 256px;
+    margin-top: -128px;
+    background: url(./res/item/tissue.png);
+    background-size: cover;
+}
+
+.input_form {
+    display: block;
+    width: 550px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 20px -2px #555353;
+}
+
+.input_form input {
+    padding-left: 10px;
+    float: left;
+    width: 450px;
+    height: 26px;
+    border: 0;
+    margin: 2px;
+    padding: 2px;
+    font-size: 1.8em;
+    border-top-style: none;
+}
+
+.input_form input:focus {
+    outline: 0;
+}
+
+.input_form input::placeholder {
+    color: rgb(177, 177, 177);
+    font-style: italic;
+}
+
+.input_form button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    top: -6%;
+    width: 90px;
+    height: 110%;
+    font-size: 1.4em;
+}
+
+.input_form button:hover {
+    cursor: pointer;
+}
+
+#record_icon {
+    width: auto;
+    height: auto;
+    background: url(./res/record_icon.png);
 }
 
 
