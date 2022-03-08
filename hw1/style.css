@@ -36,9 +36,8 @@ body {
     margin-left: -1049px;
     height: 2098px;
     margin-top: -1049px;
-    background: url(./res/rotating_ray.png);
-    z-index: 1;
-    animation: Rotation 5s linear infinite
+    background: url(./res/rotating_ray.png) center;
+    animation: Rotation 5s linear infinite;
 }
 
 #box {
@@ -75,14 +74,11 @@ body {
     height: 206px;
     margin-top: -103px;
     background: url(./res/upload_icon.png);
-}
-
-
-/* let arrow go up and down on hover */
-
-#upload_icon:hover {
     animation: MoveUpDown 0.6s linear infinite;
 }
+
+
+/* let arrow go up and down */
 
 @keyframes MoveUpDown {
     0%,
