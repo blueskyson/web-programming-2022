@@ -35,7 +35,6 @@ $(document).ready(function() {
     }
 
     // click upload_icon to go to landing_page_03
-
     $("#upload_icon").click(function() {
         setTimeout(goto_landing_page_02, 0);
         setTimeout(goto_landing_page_03, fadeInTime);
@@ -44,24 +43,21 @@ $(document).ready(function() {
     if (isAdvancedUpload) {
         // drag a file to go to landing_page_02
         // https://codepen.io/anastasialanz/pen/KdxxJx
-        $('.dropzone').on('dragenter', function() {
-            if (current_page == landing_page_01) {
-                goto_landing_page_02();
-            }
-        });
+        $('.dropzone').on('dragenter', goto_landing_page_02);
 
         // go back to landing_page_01 if file leaves
-        $('.dropzone_box2').on('dragleave', function() {
-            if (current_page == landing_page_02) {
-                goto_landing_page_01();
-            }
-        });
+        $('.dropzone_box2').on('dragleave', goto_landing_page_01);
 
         // go to landing_page_03 if file dropped
         // https://codepen.io/hiralbest/pen/zKyVZW
+        $('.dropzone_box2').on('dragover', function(e) {
+            e.preventDefault();
+        });
+
         $(".dropzone_box2").on('drop', function(e) {
             e.preventDefault();
             e.stopPropagation();
+            goto_landing_page_03();
         });
     }
 });
