@@ -14,34 +14,53 @@
     <div id="title">NCKU UNKNOWN EXCHANGE PLATFORM</div>
 
     <div class="landing_page_01">
-        <div id="box"></div>
+        <div class="full_size_box" id="box"></div>
         <div id="rotating_text"></div>
-        <div class="dropzone" id="hidden_dropzone"></div>
+        <div class="dropzone full_size_box" id="hidden_dropzone"></div>
         <div class="dropzone" id="upload_icon"></div>
     </div>
 
     <div class="landing_page_02">
-        <div class="dropzone_box2" id="box2"></div>
+        <div class="dropzone_box2 full_size_box" id="box2"></div>
         <div id="rotating_ray"></div>
     </div>
 
     <div class="landing_page_03">
         <div class="left_panel">
-            <div id="box3"></div>
-            <div id="tissue"></div>
+            <div class="full_size_box" id="box3"></div>
+            <div class="full_size_item" id="my_item"></div>
         </div>
         <div class="right_panel">
             <h1>請為泥要交換的物品取個名字吧 σ`∀´)</h1>
-            <form class="input_form">
+            <form class="input_form" id="item_name_form">
                 <input type="text" placeholder="酷酷的東西">
                 <button type="submit">Enter</button>
             </form>
             <h1>如果泥想，也可以幫它錄一段聲音優 (`･∀･)</h1>
-            <img id="record_icon" src="res/record_icon.png"></img>
+            <div class="record" style="margin-left:0; margin-top:0"></div>
         </div>
     </div>
 
-
+    <div class="landing_page_04">
+        <div class="left_panel">
+            <div class="text full_size_box">
+                <h2 style="color:grey">你的</h2>
+                <h1 id="item_name_h1" style="line-height:0em">酷酷的東西</h1>
+            </div>
+            <div class="full_size_box" id="box4"></div>
+            <div class="full_size_item" id="my_item4"></div>
+            <div class="record" id="left_record"></div>
+        </div>
+        <div id="exchange_icon"></div>
+        <div class="right_panel">
+            <div class="zero_size_box" id="scroll_box1"></div>
+            <div class="half_size_box" id="scroll_box2"></div>
+            <div class="full_size_box" id="scroll_box3"></div>
+            <div class="record" id="right_record"></div>
+            <div class="half_size_box" id="scroll_box4"></div>
+            <div class="zero_size_box" id="scroll_box5"></div>
+        </div>
+    </div>
 </body>
 
 </html>
