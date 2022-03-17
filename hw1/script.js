@@ -86,4 +86,34 @@ $(document).ready(function() {
         $('#item_name_h1').text(item_name);
         goto_landing_page_04();
     });
+
+    // scroll to select item to exchange
+    // https://codepen.io/azizn/pen/GZdXbO
+    var scroll_box_offset = 51;
+    var urls = [
+        "url(./res/item/04.png)",
+        "url(./res/item/03.png)",
+        "url(./res/item/02.png)",
+        "url(./res/item/01.png)",
+        "url(./res/item/05.png)",
+    ]
+    var mid_url_index = 2;
+    $('.scroll_zone').on('mousewheel wheel', function(e) {
+        if (e.originalEvent.wheelDelta / 120 > 0) { // scroll up event
+            if (mid_url_index == 5) {
+                mid_url_index = 0;
+            } else {
+                mid_url_index += 1;
+            }
+        } else { // scroll down event
+            if (mid_url_index == 0) {
+                mid_url_index = 5;
+            } else {
+                mid_url_index -= 1;
+            }
+        }
+        $('#scroll_top').css("background-image", urls[mid_url_index - 1]);
+        $('#scroll_mid').css("background-image", urls[mid_url_index]);
+        $('#scroll_bot').css("background-image", urls[mid_url_index + 1]);
+    });
 });

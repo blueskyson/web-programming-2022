@@ -164,6 +164,7 @@ body {
 }
 
 .input_form {
+    z-index: 5;
     display: block;
     width: 550px;
     height: 36px;
@@ -272,20 +273,14 @@ body {
     cursor: pointer;
 }
 
-#scroll_box1 {
-    top: calc(var(--top) - 2 * var(--scroll-box-offset));
-    background: url(./res/item/04.png);
-    background-size: cover;
-}
-
-#scroll_box2 {
+#scroll_top {
     top: calc(var(--top) - var(--scroll-box-offset));
     background: url(./res/item/03.png);
     background-size: cover;
     opacity: 0.5;
 }
 
-#scroll_box3 {
+#scroll_mid {
     top: var(--top);
     background: url(./res/item/02.png);
     background-size: cover;
@@ -295,16 +290,20 @@ body {
     top: calc(var(--top) + 32%);
 }
 
-#scroll_box4 {
+#scroll_bot {
     top: calc(var(--top) + var(--scroll-box-offset));
     background: url(./res/item/01.png);
     background-size: cover;
     opacity: 0.5;
 }
 
-#scroll_box5 {
-    top: calc(var(--top) + 2 * var(--scroll-box-offset));
-    background: url(./res/item/05.png);
+#hidden_scroll_zone {
+    z-index: -1;
+    float: right;
+    left: var(--left);
+    width: var(--left);
+    height: 100vh;
+    position: absolute;
 }
 
 
