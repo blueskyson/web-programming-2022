@@ -97,23 +97,24 @@ $(document).ready(function() {
         "url(./res/item/01.png)",
         "url(./res/item/05.png)",
     ]
-    var mid_url_index = 2;
     $('.scroll_zone').on('mousewheel wheel', function(e) {
+        $('#scroll_anim1').css("background-image", urls[0]);
+        $('#scroll_anim2').css("background-image", urls[1]);
+        $('#scroll_anim3').css("background-image", urls[2]);
+        $('#scroll_anim4').css("background-image", urls[3]);
+        $('#scroll_anim5').css("background-image", urls[4]);
+
+        // $('.anim_box').show();
+        // $('.item_box').hide();
         if (e.originalEvent.wheelDelta / 120 > 0) { // scroll up event
-            if (mid_url_index == 5) {
-                mid_url_index = 0;
-            } else {
-                mid_url_index += 1;
-            }
+            var tmp = urls.shift();
+            urls.push(tmp);
         } else { // scroll down event
-            if (mid_url_index == 0) {
-                mid_url_index = 5;
-            } else {
-                mid_url_index -= 1;
-            }
+            var tmp = urls.pop();
+            urls.unshift(tmp);
         }
-        $('#scroll_top').css("background-image", urls[mid_url_index - 1]);
-        $('#scroll_mid').css("background-image", urls[mid_url_index]);
-        $('#scroll_bot').css("background-image", urls[mid_url_index + 1]);
+        $('#scroll_top').css("background-image", urls[1]);
+        $('#scroll_mid').css("background-image", urls[2]);
+        $('#scroll_bot').css("background-image", urls[3]);
     });
 });
