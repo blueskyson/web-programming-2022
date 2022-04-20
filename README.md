@@ -11,3 +11,15 @@ Homework of NCKU EE web programming 2022
 ![](./images/hw1_demo.gif)
 
 此作品單純使用 css 和 jquery 來實現網頁動畫，沒有套用任何前端框架。
+
+
+**HW2:** [http://luffy.ee.ncku.edu.tw:1401/index.html](http://luffy.ee.ncku.edu.tw:1401/index.html)
+
+使用 Ajax 實作超簡易的學號系統
+
+1. 列出所有 學號:姓名 清單
+2. 輸入特定學號，輸出對應的姓名
+3. 新增一筆 學號:姓名 資料
+4. 輸入學號，刪除該筆資料
+
+![](./images/hw2_demo.png)
