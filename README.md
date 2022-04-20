@@ -23,3 +23,7 @@ Homework of NCKU EE web programming 2022
 4. 輸入學號，刪除該筆資料
 
 ![](./images/hw2_demo.png)
+
+**Final Project:** [http://luffy.ee.ncku.edu.tw:8080](http://luffy.ee.ncku.edu.tw:8080)
+
+Under development...
