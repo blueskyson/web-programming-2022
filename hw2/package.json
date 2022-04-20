@@ -1,0 +1,11 @@
+{
+    "name": "http",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "express": "^4.17.3"
+    }
+}
