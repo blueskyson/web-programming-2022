@@ -13,7 +13,7 @@ Homework of NCKU EE web programming 2022
 此作品單純使用 css 和 jquery 來實現網頁動畫，沒有套用任何前端框架。
 
 
-**HW2:** [http://luffy.ee.ncku.edu.tw:1401/index.html](http://luffy.ee.ncku.edu.tw:1401/index.html)
+**HW2:** [https://luffy.ee.ncku.edu.tw:1401/index.html](http://luffy.ee.ncku.edu.tw:1401/index.html)
 
 使用 Ajax 實作超簡易的學號系統
 
